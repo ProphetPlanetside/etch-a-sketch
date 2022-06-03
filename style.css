@@ -1,9 +1,14 @@
-.test {
+.square {
     color: dodgerblue;
+    background-color: black;
+    width: 30px;
+    height: 30px;
 }
 
 #grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
+    width: auto;
+    justify-items: center;
 }
