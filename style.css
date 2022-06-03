@@ -1,14 +1,32 @@
 .square {
     color: dodgerblue;
     background-color: black;
-    width: 30px;
+    width: 100px;
     height: 30px;
+    border-color: green;
+    border-width: 10px;
+    flex-basis: 24%;
 }
 
+/* Flexbox */
 #grid {
+    display: flex;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    gap: 0px;
+    justify-content: center;
+    border: 10px solid green;
+    /* background color is used to solve the remaining white-space problem I have on the left and
+       right of the square divs. There is probably a better way to handle it. */
+    background-color: green;
+}
+
+/* CSS grid */
+/* #grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     gap: 10px;
     width: auto;
     justify-items: center;
-}
+} */
