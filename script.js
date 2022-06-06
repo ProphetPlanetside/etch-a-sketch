@@ -7,7 +7,7 @@ function changeColor(square) {
     square.style.cssText = "background-color: red;"
 }
 
-let n = 4;
+let n = 10;
 
 // the backtick ` let's me use a variable in my JS script for this line below.
 grid.style.cssText = `grid-template-columns: repeat(${n}, 1fr);`
@@ -15,10 +15,16 @@ grid.style.cssText = `grid-template-columns: repeat(${n}, 1fr);`
 function createSquare() {
     const square = document.createElement('square');
     square.classList.add('square');
-    // square.textContent= "Square";
+    
+    // This is the calculation to find the flex-basis, maybe I should use a different
+    // name other than "width" here though.
+    const width = 100/n;
+    square.style.cssText = `flex-basis: ${width}%;`
+    // Height calculation below is wrong. It works when n=10 but not for other numbers.
+    const height = n*80/10;
+    square.style.cssText = `height: ${height}px;`
 
     grid.appendChild(square);
-
     square.addEventListener("mouseover", function() {changeColor(square)});
  }
 

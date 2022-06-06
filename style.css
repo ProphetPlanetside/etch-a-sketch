@@ -1,17 +1,16 @@
 .square {
     color: dodgerblue;
     background-color: black;
-    width: 100px;
-    height: 30px;
+    height: 80px;
     border-color: green;
     border-width: 10px;
-    flex-basis: 24%;
+    flex: 1 0 10%;
 }
 
 /* Flexbox */
 #grid {
     display: flex;
-    max-width: 1200px;
+    width: 800px;
     flex-wrap: wrap;
     gap: 0px;
     justify-content: center;
