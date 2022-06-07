@@ -57,6 +57,10 @@ function newGridPrompt() {
     let answer = 101;
     while (answer > 100) {
         answer = prompt("How many squares per side would you like? (Max: 100)");
+        // If the user clicks "Cancel" then the prompt goes away and the current grid remains the same.
+        if(answer == null) {
+            return;
+        }
         // If the answer is not a number.
         if(isNaN(answer)) {
             alert("That is not a number; please enter a number.");
