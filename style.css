@@ -4,7 +4,8 @@
     height: 80px;
     border-color: green;
     border-width: 10px;
-    flex: 1 0 10%;
+    flex: 1 0;
+    flex-basis: 10%;
 }
 
 /* Flexbox */
@@ -20,7 +21,7 @@
     background-color: green;
 }
 
-/* CSS grid */
+/* CSS grid, not being used as Flexbox is being used above instead. */
 /* #grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
