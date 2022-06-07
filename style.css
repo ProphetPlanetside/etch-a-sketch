@@ -1,11 +1,11 @@
 .square {
     color: dodgerblue;
     background-color: black;
-    height: 80px;
+    /* height: 80px; */
     border-color: green;
     border-width: 10px;
-    flex: 1 0;
-    flex-basis: 10%;
+    /* flex: 1 0; */
+    /* flex-basis: 10%; */
 }
 
 /* Flexbox */
