@@ -1,11 +1,15 @@
 .square {
     color: dodgerblue;
     background-color: black;
-    /* height: 80px; */
+    /* height: 80px; (Set in the javascript) */
     border-color: green;
     border-width: 10px;
-    /* flex: 1 0; */
-    /* flex-basis: 10%; */
+    /* flex: 1 0; (Set in the javascript) */
+    /* flex-basis: 10%; (Set in the javascript) */
+}
+
+#topButton {
+    margin: 10px;
 }
 
 /* Flexbox */
@@ -21,7 +25,7 @@
     background-color: green;
 }
 
-/* CSS grid, not being used as Flexbox is being used above instead. */
+/* CSS grid, not being used as Flexbox is being used above instead, since that worked out easier for me. */
 /* #grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
